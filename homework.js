@@ -191,4 +191,4 @@ const declareMurderer = function() {
 
 const verdict = declareMurderer();
 console.log(verdict);
-// // will return Mrs Peacock - wrong it returned Prof Plum
+// // will return Mrs Peacock - wrong it returned Prof Plum as Mrs Peacock only inside block
