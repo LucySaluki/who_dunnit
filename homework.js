@@ -179,16 +179,36 @@
 
 // //Episode 9
 
-let murderer = 'Professor Plum';
+// let murderer = 'Professor Plum';
 
-if (murderer === 'Professor Plum') {
-  let murderer = 'Mrs. Peacock';
-}
+// if (murderer === 'Professor Plum') {
+//   let murderer = 'Mrs. Peacock';
+// }
 
-const declareMurderer = function() {
-  return `The murderer is ${murderer}.`;
-}
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
 
-const verdict = declareMurderer();
-console.log(verdict);
+// const verdict = declareMurderer();
+// console.log(verdict);
 // // will return Mrs Peacock - wrong it returned Prof Plum as Mrs Peacock only inside block
+
+//Episode 10 - additional
+const scenario = {
+    murderer: 'Miss Scarlet',
+    room: 'Library',
+    weapon: 'Rope'
+  }
+const plotTwist = function(weapon) {
+    if (scenario.weapon === "Rope"){
+        murderer = "Professor Plum";
+        room="Dining Room";
+    }
+}
+const declareMurderer = function() {
+    return `The murderer is ${murderer} and the location is ${scenario.room}.`;
+}
+
+plotTwist(scenario.weapon)
+const verdict =declareMurderer()
+console.log(verdict);
