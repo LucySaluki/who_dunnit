@@ -111,13 +111,13 @@
 
 // //Episode 7
 
-// let murderer = 'Professor Plum';
+// let murderer = 'Professor Plum'; // redefined to Mr Green
 
 // const changeMurderer = function() {
 //   murderer = 'Mr. Green';
 
 //   const plotTwist = function() {
-//     let murderer = 'Colonel Mustard';
+//     let murderer = 'Colonel Mustard'; //redefined to Miss Scarlet but this not used as only indie plotTwist
 
 //     const unexpectedOutcome = function() {
 //       murderer = 'Miss Scarlet';
@@ -130,13 +130,13 @@
 // }
 
 // const declareMurderer = function() {
-//   return `The murderer is ${murderer}.`;
+//   return `The murderer is ${murderer}.`; // uses global one not one inside changeMurderer
 // }
 
 // changeMurderer();
 // const verdict = declareMurderer();
 // console.log(verdict);
-// // will return Prof Plum - wrong it returned Mr. Green
+// // will return Prof Plum - wrong it returned Mr. Green uses parent
 
 
 // //Episode 8
@@ -175,7 +175,7 @@
 // changeScenario();
 // const verdict = declareWeapon();
 // console.log(verdict);
-// // will return candle stick
+// // // will return candle stick
 
 // //Episode 9
 
